@@ -1,7 +1,4 @@
-pub mod maven;
-pub mod util;
-
-pub use maven::*;
+pub use libic::*;
 
 pub async fn get_fabric_versions() -> MavenVersionResult {
     let resp = util::get(
